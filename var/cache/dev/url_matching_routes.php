@@ -13,9 +13,14 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\PrincipalController::login'], null, null, null, false, false, null]],
+        '/inicio' => [[['_route' => 'inicio', '_controller' => 'App\\Controller\\PrincipalController::inicio'], null, null, null, false, false, null]],
         '/ingreso' => [[['_route' => 'ingreso', '_controller' => 'App\\Controller\\PrincipalController::ingreso'], null, null, null, false, false, null]],
-        '/prueba' => [[['_route' => 'prueba', '_controller' => 'App\\Controller\\PrincipalController::prueba'], null, null, null, false, false, null]],
-        '/index' => [[['_route' => 'index', '_controller' => 'App\\Controller\\PrincipalController::index'], null, null, null, false, false, null]],
+        '/noticia' => [[['_route' => 'noticia', '_controller' => 'App\\Controller\\PrincipalController::prueba'], null, null, null, false, false, null]],
+        '/api/entrar' => [[['_route' => 'entrar', '_controller' => 'App\\Controller\\UsuarioApiController::ingreso'], null, ['GET' => 0], null, false, false, null]],
+        '/api/entrarP' => [[['_route' => 'entrarP', '_controller' => 'App\\Controller\\UsuarioApiController::ingresoP'], null, ['POST' => 0], null, false, false, null]],
+        '/api/confirmarLogin' => [[['_route' => 'confirmarLogin', '_controller' => 'App\\Controller\\UsuarioApiController::confirmarlogin'], null, ['POST' => 0], null, false, false, null]],
+        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\PrincipalController::login'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

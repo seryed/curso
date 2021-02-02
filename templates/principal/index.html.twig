@@ -9,13 +9,20 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hola {{ controller_name }}! ✅ entro por {{ entro }}</h1>
+    <h1>Hola {{ controller_name }}! ✅ > {{ entro }}</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/proyectos/curso/src/Controller/PrincipalController.php'|file_link(0) }}">src/Controller/PrincipalController.php</a></code></li>
-        <li>Ingreso <code><a href="{{ path('ingreso')}}">Ingreso</a></code></li>
+    Primer pagina
+    <ul>        
+        
+        {% if entro =='Principal' %}
+             <li><code><a href="{{ path('ingreso')}}">Ingreso</a></code></li>      
+        {% endif %}
 
+        {% if entro == 'Ingreso' %}
+             <li><code><a href="{{ path('inicio')}}">Principal</a></code></li>      
+        {% endif %}
+        <li><code><a href="{{ path('noticia')}}">Noticia repetir 20</a></code></li>        
     </ul>
+     <code><a href="{{ path('login')}}">Salir</a></code>
 </div>
 {% endblock %}

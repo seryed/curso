@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<script>
+    {# $(document).ready(function() {
+        $("#enviar").click(function(){
+            var usuario = $("#usuario").val(); 
+            var password = $("#password").val(); 
+            
+            $.post("{{path('confirmarlogin')}}", { usuario: usuario,password:password }, function(response) {           
+                if (response.respuesta == 'Encontrado') {
+                        location.href =  "{{path('ingreso')}}";
+                        $("#errorLogin").hide();
+                    }
+                    else{
+                        $("#msg_error").html(response.error);
+                        $("#errorLogin").show();                     
+                    };   
+                // $("#form").submit();
+                });         
+         });
+    }) #}
+</script>
+
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Login ✅</h1>
+
+    <form class="m-t" role="form" action="{{path('confirmarLogin')}}" method="post" >
+    
+    <div class="form-group">
+                        <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" autocomplete="off" />
+                    </div>
+                   
+                    <div  id="errorLogin" style="background-color: red;color: white; display:none" >
+                        <div id="msg_error" ></div>                     
+                    </div>
+                    
+                    <button type="submit" class="btn bt block full-width m-b style" id="enviar" name="enviar" >Ingresar</button>
+
+                     {% if error != "" %}
+                    <div data-aos="zoom-in" >
+                        <div id="errorLogin"  style="background-color: red;color: white"><p> {{ error}}!</p></div>                     
+                    </div>
+                     {% endif %} 
+    </form>
+        
+</div>
+{% endblock %}
