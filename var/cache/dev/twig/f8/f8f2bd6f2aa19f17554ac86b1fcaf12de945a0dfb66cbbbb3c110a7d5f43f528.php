@@ -101,7 +101,7 @@ class __TwigTemplate_18c717566d0c409cdb21dfdd0bee470ea7a9089dc70e26d88fe0351789f
     ";
         // line 14
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(range(0, 10));
+        $context['_seq'] = twig_ensure_traversable(range(0, 20));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
             // line 15
             echo "        <li> ";
@@ -160,7 +160,7 @@ class __TwigTemplate_18c717566d0c409cdb21dfdd0bee470ea7a9089dc70e26d88fe0351789f
 <div class=\"example-wrapper\">
     <h1>{{ controller_name }}! ✅ > {{ entro }}</h1>
     <ul>
-    {% for i in 0..10 %}
+    {% for i in 0..20 %}
         <li> {{ titulo | upper }}</li>
     {% endfor %}      
     </ul>
@@ -168,6 +168,6 @@ class __TwigTemplate_18c717566d0c409cdb21dfdd0bee470ea7a9089dc70e26d88fe0351789f
     
 </div>
 {% endblock %}
-", "principal/noticia.html.twig", "C:\\wamp64\\www\\proyectos\\curso\\templates\\principal\\noticia.html.twig");
+", "principal/noticia.html.twig", "C:\\wamp64\\www\\proyectos\\cursoIPAP\\templates\\principal\\noticia.html.twig");
     }
 }

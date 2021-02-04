@@ -182,6 +182,42 @@
       ),
       'reference' => '121af47c9aee9c03031bdeca3fac0540f59aa5c3',
     ),
+    'friendsofsymfony/rest-bundle' => 
+    array (
+      'pretty_version' => '3.0.4',
+      'version' => '3.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0564bdff0e4ee08f5cd418272a749bceecde75bf',
+    ),
+    'jms/metadata' => 
+    array (
+      'pretty_version' => '2.4.0',
+      'version' => '2.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '491917b66b44deff7d1c320d35c1b92237083f67',
+    ),
+    'jms/serializer' => 
+    array (
+      'pretty_version' => '3.11.0',
+      'version' => '3.11.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5158b454ecf209a9fea91c837e827355204581ea',
+    ),
+    'jms/serializer-bundle' => 
+    array (
+      'pretty_version' => '3.8.0',
+      'version' => '3.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5ba2675b9174659013fd93c3cbc8edf12189c9af',
+    ),
     'laminas/laminas-code' => 
     array (
       'pretty_version' => '4.0.0',
@@ -281,6 +317,15 @@
       array (
       ),
       'reference' => '6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0',
+    ),
+    'phpstan/phpdoc-parser' => 
+    array (
+      'pretty_version' => '0.4.10',
+      'version' => '0.4.10.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5c1eb9aac80cb236f1b7fbe52e691afe4cc9f430',
     ),
     'psr/cache' => 
     array (
@@ -1080,6 +1125,24 @@
       array (
       ),
       'reference' => 'bafc69caeb4d49c39fd0779086c03a3738cbb389',
+    ),
+    'willdurand/jsonp-callback-validator' => 
+    array (
+      'pretty_version' => 'v1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1a7d388bb521959e612ef50c5c7b1691b097e909',
+    ),
+    'willdurand/negotiation' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '04e14f38d4edfcc974114a07d2777d90c98f3d9c',
     ),
     'zendframework/zend-code' => 
     array (
